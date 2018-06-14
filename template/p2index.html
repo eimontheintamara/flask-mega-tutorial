@@ -1,0 +1,10 @@
+{% extends "p2base.html" %}
+
+{% block content %}
+
+	<h4>Hi, {{ user.username }}!</h4>
+	{% for post in posts %}
+	<div><p>{{ post.author.username }} says:<b>{{ post.body }}</b></p></div>
+	{% endfor %}
+
+{% endblock %}
